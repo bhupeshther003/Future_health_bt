@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./image/logmain.jpg.png" type="image/x-icon">
+	<title>FH_Doc_Query</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./main.css">
+	<script src="./javascript.js"></script>
+
+	<style>
+		.navbar img {
+			width: 10%
+		}
+
+	
+		.coll-1 {
+			border-width: 0px 1px 0px 0px;
+			border-style: solid;
+			border-color: #ececec;
+			/* border: 1px solid  #ececec;*/
+		}
+
+		input {
+			border: 1px solid #ececec;
+			width: 100%;
+			margin-top: 1%;
+			background: #f8f8f8;
+		}
+
+		label span {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-expand-lg ">
+		<div class="container-fluid">
+			<img src="./image/logo.png" class="navbar-brand" alt="logo">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class=" navbar-nav mx-auto me-3 mb-2 mb-lg-0 nav justify-content-end">
+					<!-- mx-auto me-3 mb-2 mb-lg-0 nav justify-content-end  for the one in two in nav tabs -->
+					<li class="nav-item">
+						<a class="nav-link  active" aria-current="page" href="./boostrap-index.html ">
+							<i class="fa fa-home fa-1px" aria-hidden="true"></i>Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="find_mydoc.html"><i class="fa fa-user-md fa-1px" aria-hidden="true"></i>Find a Doctor</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="medical-service.html"><i class="fa fa-heartbeat fa-1px" aria-hidden="true"></i> Medical Services</a>
+					</li>
+
+					<li class="nav-item dropdown navbar-brand1">
+						<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"><i class="fa fa-calendar fa-1px" aria-hidden="true"></i>
+							Appointment
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a class="dropdown-item navbar-brand1" href="BookAppointment.html">Book Appointment</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item navbar-brand1" href="appoint.html">Check Appointment Status</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"><i class="fa fa-phone-square fa-1px" aria-hidden="true"></i> Contact us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./login.html"> <i class="fa fa-graduation-cap fa-1x" aria-hidden="true"></i>
+							Carrier</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link navbar-brand1 " href="about.html"> <i class="fa fa-info-circle fa-1x" aria-hidden="true"></i> About Us </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<div class="container mt-3">
+		<div class="row" style="display: flex;">
+
+			<div class="col-xl-4 col-lg-4 col-md-4 border col-sm-12 fs-4 "  >
+				<div class=" col-12 mt-5">
+					<label for="" class=" p-2 m-auto" id="defaultOpen" onclick="openname(event,'Enqiry')"><span
+							class="fw-bolder fs-3 text-dark"> > </span>Enquiry Form
+					</label>
+					<label for="" class=" p-md-2  d-block m-auto " onclick="openname(event,'feedback')"><span
+							class="fw-bolder fs-3 text-dark"> > </span>Feedback Form
+					</label>
+					<label for="" class=" p-2 m-auto" onclick="openname(event,'appointment')"><span
+							class="fw-bolder fs-3 text-dark"> > </span>Appointment Form
+					</label>
+
+				</div>
+			</div>
+
+			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 "  >
+				<div class=" mt-5 col-xl-11  col-lg-11 col-md-10 col-sm-12  tabcontent " id="Enqiry">
+					<strong class="fs-4 "> Furture Health >> Enquiry Form</strong>>
+
+					<label for="name" class="mt-2 mb-1">Name<span class='text-danger fw-bolder'>*</span></label>
+					<input type="text" class="mt-2 p-2" name="name" id="uname" placeholder="Enter Yoour Full Name"
+						required>
+
+					<div class="row mt-2">
+						<div class="col-6">
+							<label for="mail " class="mt-1">Email ID<span class='text-danger fw-bolder'>*</span></label>
+
+
+							<input type="email" class="mt-2 p-2" name="mail" id="email"
+								placeholder="Enter Your Email ID" required>
+						</div>
+						<div class="col-6">
+							<label for="mono" class="mt-1">Mobile Number <span
+									class='text-danger fw-bolder'>*</span></label>
+							<input type="tel" class="mt-2 p-2" name="num" id="mo_num" placeholder="Enter Contact Number"
+								required>
+						</div>
+					</div>
+					<label for="docname" class="mt-3">Doctoor Name <span class='text-danger fw-bolder'>*</span></label>
+					<input type="text" class="mt-2 p-2" name="docname" id="doc-name" placeholder="Dr. Mohit Roy"
+						required>
+
+
+					<label for="questio" class="mt-3">Your Query <span class='text-danger fw-bolder'>*</span></label>
+					<textarea class="col-12 mt-1" row="6" name="Query" id="ques"></textarea>
+
+
+					<button type="reset" class=" btn m-auto mt-3 ms-md-5 ms-sm-0  text-dark btn-outline-info "
+						style="width:100px;">Clear All</button>
+					<button type="submit"
+						class=" btn  float-end text-dark btn-outline-info m-auto ps-3 pe-3  mt-3 me-md-5 me-sm-0  ">Submit</button>
+
+				</div>
+
+
+
+
+
+
+
+
+				<div class="col-xl-8  col-lg-8 col-md-9 col-sm-12 mt-5 tabcontent" id="feedback">
+					<strong class="fw-bold fs-4"> Furture Health >> Feedback Form</strong>>
+
+					<div class="row mt-2">
+						<div class="col-6">
+							<label for="name" class="mt-2 mb-1">Name<span class='text-danger fw-bolder'>*</span></label>
+							<input type="text" class="mt-2 p-2" name="name" id="uname"
+								placeholder="Enter Yoour Full Name" required>
+						</div>
+						<div class="col-6">
+							<label for="mono" class="mt-1">Mobile Number <span
+									class='text-danger fw-bolder'>*</span></label>
+							<input type="tel" class="mt-2 p-2" name="num" id="mo_num" placeholder="Enter Contact Number"
+								required>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-6">
+							<label for="mail" class="mt-1">Email ID<span class='text-danger fw-bolder'>*</span></label>
+
+							<input type="email" class="mt-2 p-2" name="mail" id="email"
+								placeholder="Enter Your Email ID" required>
+						</div>
+
+						<div class="col-6">
+							<label for="mono" class="mt-1">Department <span
+									class='text-danger fw-bolder'>*</span></label>
+							<select name="" class=" m-2 p-2" id="" style="width:97%">
+								<option value="">Select Department</option>
+								<option value="">Customer Service</option>
+								<option value=""> Nursing</option>
+								<option value=""> Admin</option>
+								<option value="">Billing</option>
+								<option value="">House Keeping</option>
+								<option value="">Doctors</option>
+								<option value="">Other</option>
+
+							</select>
+						</div>
+					</div>
+
+					<label for="questio" class="mt-3 ">Your Query</label>
+					<textarea class="col-12 mt-1" row="6" name="Query" id="ques"></textarea>
+
+
+					<button type="reset" class=" btn m-auto mt-3 ms-5  text-dark btn-outline-info "
+						style="width:100px;">Clear All</button>
+					<button type="submit"
+						class=" btn  float-end text-dark btn-outline-info m-auto ps-3 pe-3  mt-3 me-5 ">Submit</button>
+
+				</div>
+
+
+
+
+
+				<div class=" mt-5 col-xl-8  col-lg-8 col-md-9 col-sm-12  tabcontent " id="appointment">
+					<strong class="fw-bold fs-4"> Furture Health >> Appointment Enquiry Form </strong>
+
+					<label for="name" class="mt-2">Name<span class='text-danger fw-bolder'>*</span></label>
+					<input type="text" class="mt-2 p-2" name="name" id="uname" placeholder="Enter Yoour Full Name"
+						required>
+
+					<div class="row mt-2">
+						<div class="col-6">
+							<label for="mail" class="mt-1">Email ID<span class='text-danger fw-bolder'>*</span></label>
+							<input type="email" class="mt-1 p-2" name="mail" id="email"
+								placeholder="Enter Your Email ID" required>
+						</div>
+
+						<div class="col-6">
+							<label for="mono" class="mt-1">Mobile Number <span
+									class='text-danger fw-bolder'>*</span></label>
+							<input type="tel" class="mt-2 p-2" name="num" id="mo_num" placeholder="Enter Contact Number"
+								required>
+						</div>
+					</div>
+
+
+					<label for="docname" class="mt-3">Choose Remark<span class='text-danger fw-bolder'>*</span></label>
+
+					<div class="row" style="display: flex;">
+						<div class="col">
+
+							<div class="form-check mt-2 p-2">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									Coversation
+								</label>
+							</div>
+							<div class="form-check mt-2 p-2">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									Appointment issue
+								</label>
+							</div>
+
+
+						</div>
+						<div class="col ">
+							<div class="form-check mt-2 p-2">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									No Response
+								</label>
+							</div>
+							<div class="form-check mt-2 p-2">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									Appointment status issue
+								</label>
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+
+
+					<label for="questio" class="mt-3">Your Query</label>
+					<textarea class="col-12 mt-1" row="6" name="Query" id="ques"></textarea>
+
+					<button type="reset" class=" btn m-auto mt-3 ms-5  text-dark btn-outline-info "
+						style="width:100px;">Clear All</button>
+					<button type="submit"
+						class=" btn  float-end text-dark btn-outline-info m-auto ps-3 pe-3  mt-3 me-5 ">Submit</button>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+
+<script>
+
+
+	function openname(evt, Name) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(Name).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+</script>
+
+
+</html>

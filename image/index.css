@@ -1,0 +1,129 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.header {
+	background-color: rgb(230, 151, 33);
+	height: 100px;
+	top:0;
+	position:sticky;
+	z-index:50;
+	
+}
+
+
+.header nav ul {
+
+position: relative;
+bottom:85px;
+left:220px;
+}
+
+.header img{
+	margin:7px 0px 9px 10px;
+}
+
+.header nav ul li {
+	display:inline-flex;
+	margin: 47px 10px 0px 20px;
+	padding:7px 5px 1px 5px;
+	
+}
+li:hover{
+background-color: aqua;
+}
+
+
+.down{
+display: none;
+position:absolute;
+}
+
+.down a{
+display: block;
+border:1px groove black;
+text-decoration:none;
+background-color: blanchedalmond;
+color:rgb(0, 0, 0);
+}
+.drop{
+display: inline-block;
+position: relative;
+}
+.down a:hover{
+background-color: chartreuse;
+color:rgb(6, 5, 70)
+}
+
+.drop:hover .down{
+display:block;
+}
+
+.content{
+	 background-color: aquamarine;
+	 background-attachment: fixed;
+	background-image: url("/college project/image/back.jpg ");
+	background-image: url("https://th.bing.com/th/id/R.e3aa42f8abc2627872c33ba195a3ecb9?rik=VyRNbkx10wCXxw&riu=http%3a%2f%2fwww.slidebackground.com%2fuploads%2fhospital-background%2fhospital-doctors-reverence-cancer-victim-donated-0.jpg&ehk=q%2f9EbY1IzprjFjS7csaiQzWbJhuJ2tXyOC6RUS4XLEE%3d&risl=&pid=ImgRaw&r=0");
+
+	background-size:cover;
+	min-height:calc(100vh - 100px);
+}
+
+
+.blog{
+	position:absolute;
+	margin-top:400px;
+	padding-left: 30px;
+	margin:450px 0px 0px 10px;
+}
+.blog .content1{
+	display:inline-block;
+	width:350px;
+	height: 250px;
+	background-color: rgba(0,0,0,0.5);
+	position:relative;
+	border-radius:10px;
+	margin:10px 18px 18px 12px;
+	
+    
+}
+  .blog .content1 h2{
+
+	text-align:center;
+	width:200px;
+	padding:10px 10px 0px 10px;
+	
+ } 
+ /*
+.content1:hover{
+	animation: conte 3s ease-in 2s hover;}
+
+ /* @keyframes conte {
+10%{bac}
+	
+ } */ 
+
+   .content1 h2 {
+	text-align: center;
+	color: rgb(233, 178, 27);
+	overflow: hidden;
+	background: linear-gradient(to right, rgb(246, 250, 8), rgb(0, 4, 245) 30%, rgb(10, 10, 10) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 375ms ease-in;
+	text-decoration:none ; 
+  }
+ 
+	 h2:hover {
+	  background-position: 0 100%;
+	}
+	
+	.bt{
+		background-color: blue;
+	}

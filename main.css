@@ -1,0 +1,243 @@
+
+
+
+/* index page nav bar  */
+.rows { 
+	opacity: 0; /* use for the scrolling effect*/ 
+	transform: translate(0, 39vh);
+	transition: all 2s;
+}
+
+.active {
+	opacity: 1;
+	transform: translate(0);
+}
+
+.navbar a {
+	color: black;
+ border:0px solid transparent;	
+}
+
+.navbar-brand {
+	width: 10%;
+}
+
+.navbar a:hover{
+	
+	border-width: 0px 0px 1px 0px;
+	border-color:aqua;
+
+}
+
+
+
+
+
+
+
+
+/* contact related css */
+
+
+.contact .fa{
+	font-size: 30px;
+	z-index:1;
+	
+}
+  .contact > .top-50 > a > p:hover{
+	background-color: red;
+	border-radius: 20px;
+ }
+ .contact > .top-50 > a +a > p:hover{
+	background-color: blue;
+	border-radius: 20px;
+ }
+ .contact > .top-50 > a +a+a >p:hover{
+	background-color: palevioletred;
+	border-radius: 20px;
+ }
+ .contact > .top-50 > a +a+a+a> P:hover{
+	background-color: rgb(0, 183, 255);
+	border-radius: 20px;
+ }
+ .contact > .end-0 > a>p:hover{
+	background-color: rgb(0, 247, 0);
+	border-radius:10px;	
+ }
+ .contact > .end-0 > a+a>p:hover{
+	background-color: rgb(197, 235, 27);
+	border-radius: 20px;
+ } 
+ .contact > .top-50 > a{
+	text-decoration: none;
+	color:black;
+ }
+
+
+ /*  end here contact ralated css */
+
+
+
+
+
+
+ /*  Speciliies page css */
+
+
+ /*  Speciliies page css */
+
+
+
+ .container>.row>.col-lg-6>h2{
+	color:rgb(13, 3, 58);
+	border-width:0px 0px 3px 0px ;
+	border-style: groove;
+	border-color:aqua;
+ }
+
+ .container>.row>.col-lg-6>.row>.col>h3{
+ color: rgb(12, 13, 88);
+ 
+ }
+
+ .container>.row>.col-lg-6>.row>.col>h3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+	
+    border:1px solid #000;
+	background-color: blue;
+    transition: width .3s;
+}
+  
+.container>.row>.col-lg-6>.row>.col>h3:hover::after{
+    width: 100%;
+	color: rgb(240, 6, 6);
+transition: width .3s;
+}
+
+.container>.row>.col-lg-6>.row>.col>.row{
+color:rgb(2, 57, 121);
+}
+
+.container>.row>.col-lg-6>.row>.col>.row{
+	height: 4rem;
+}
+.container>.row>.col-lg-6>.row>.col>.row:hover{
+	background-color: rgb(66, 137, 196);
+	color:aliceblue;
+	border-radius:10px;
+	padding:3px;
+	
+}
+
+/* end speciliest */
+
+
+
+
+/* service */
+
+.service_page_hover{
+width:290px;
+margin: 1px;
+height: 70px;
+
+border-radius:10px;
+text-align: center;
+border:1px solid rgb(109, 94, 94);
+}
+
+
+:nth-child(odd).service_page_hover{
+	background-color: rgb(39, 185, 211);
+}
+:nth-child(even).service_page_hover{
+	background-color: rgb(47, 100, 199);
+}
+.service_page_hover>a{
+	text-decoration: none;
+	color:black;
+	padding:10px;
+
+
+}
+
+.service_page_hover:hover{
+	background-color: rgb(66, 137, 196);
+	border-radius:10px;
+	padding:10px;
+	color:white;
+	border:1px solid rgb(20, 4, 255);
+}
+.service_page_hover>a:hover{
+	color:white
+}
+ 
+
+/*  End envirment page  */
+
+/*  environment page  */
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		.navbar a {
+			color: black;
+		}
+
+
+
+		.navbar-brand {
+			width: 10%;
+		}
+
+		.envir_info > .card-body > a{
+			text-decoration: none;
+			color: black;
+			/* border:1px solid blue; */
+		}
+		
+		.carousel-inner {
+			height: 400px;
+		}
+
+		.carousel-caption {
+			position: absolute;
+			bottom: 55%;
+		}
+
+		.col {
+			/* border:1px solid black; */
+			margin: 1%;
+		}
+
+
+		.container .row .col .card {
+			border: 1px solid rgb(194, 192, 192);
+
+		}
+
+		
+
+		.img-fluid {
+			width: 100%;
+			height: auto;
+		}
+
+		.item>.card>img {
+			width: 100%;
+			aspect-ratio: 3/2;
+			object-fit: contain;
+
+		}
+
+
+		.d-sm-flex>img{
+			width:80%;
+		}
+	
+
+		/*  end environment page code */

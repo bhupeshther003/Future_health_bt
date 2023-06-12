@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Owl Carousel Example</title>
+  <!-- Include Owl Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<style>
+  .item{
+    background-color: aqua;
+    height: 200px;
+    width: 250px;
+  }
+
+  .owl-nav{
+    color:red;
+    
+  }
+
+</style>
+<body>
+
+  <!-- Create a container for the carousel -->
+  <div class="owl-carousel owl-theme">
+    <!-- Add carousel items -->
+    <div class="item">  
+      <div class="card m-auto tablinks" style="width:13rem;" onclick="openCity(event, 'Child')">
+        <img src="./image/first-box.png" alt="" class="img-fluid m-auto p-1">
+        <p class="text-center fs-4 fw-bold" style=" line-height: 4cqh;">New Born Care</p>
+        <p class="text-center p-2 ">Birth of a new born is an amazing feeling.</p>
+      </div>
+    </div>
+
+    <div class="item">
+
+      <div class="card m-auto tablinks" style="width:13rem;" onclick="openCity(event, 'Pediatric')">
+        <img src="./image/second-box.png" alt="" class="img-fluid m-auto p-1">
+        <h2 class="text-center fs-4 fw-bold" style=" line-height: 4cqh;"> Pediatric [I.C.U]</h2>
+        <p class="text-center">Pediatric Intensive Care deals with life threatening...</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card m-auto" style="width:13rem;" onclick="openCity(event, 'Pediatric_Surgery')">
+        <img src="./image/third-box.png" class="img-fluid m-auto p-1" alt="">
+        <h2 class="text-center fs-4 fw-bold" style=" line-height: 4cqh;">  Pediatric Surgery</h2>
+        <p class="tex-center">Our mission is to provide and promote excellence.</p>
+      </div>
+    </div>
+
+
+    <div class="item"> 
+      
+      <div class="card m-auto" style="width:13rem;" onclick="openCity(event, 'Genral')">
+        <img src="./image/fourth-box.png" alt="" class="img-fluid m-auto p-1">
+        <p class="text-center fs-4 fw-bold" style=" line-height: 4cqh;">General Surgery </p>
+        <p class="text-center">General Pediatrics deals with common ailments.</p>
+      </div>
+  
+    </div>
+  
+    <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">next</span></button></div>
+
+
+
+  </div>
+
+  <!-- Include jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Include Owl Carousel JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    // Initialize Owl Carousel
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        
+        loop:false,
+        margin: 10,
+        // autoWidth:true,
+        responsive:{
+          0:{
+            items:1,
+            nav:true,
+            dots:false
+          },
+          600:{
+            items:2,
+            loop: true,
+            nav: true
+          },
+          1000:{
+            items:4,
+            loop:false,
+            nav: false,
+            dots:false
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<title>Apply Filter Three Times</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<head>
+  
+
+  <style>
+
+    .item{
+      background-color: aqua;
+    }
+   </style>
+
+
+</head>
+ 
+
+<body>
+  
+
+  <div class="owl-carousel owl-theme">
+
+    bhupesh 
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
+</div>
+
+
+
+</body>
+
+
+
+<script>
+
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+
+})
+
+
+</script>
+
+</html> -->

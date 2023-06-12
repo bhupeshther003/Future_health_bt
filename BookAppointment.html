@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./image/logmain.jpg.png" type="image/x-icon">
+	<title>FH-Appointment</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	
+	<link rel="stylesheet" href="./main.css">
+	<style>
+		body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+	.navbar{
+	
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  background-color: ghostwhite;
+  
+
+}
+
+		.navbar a {
+			color: black;
+			font-weight: 300;
+		}
+
+
+
+		.navbar-brand {
+			width: 10%;
+		}
+
+		
+		input,
+		select {
+			border: 1px solid #ececec;
+			width: 100%;
+			margin-top: 1%;
+			background: #f8f8f8;
+			color: #98a2a9;
+			height: 45px;
+			padding: 12px 30px 12px 18px;
+		}
+
+
+		input[type='checkbox'] {
+			width: 10%;
+			display: inline-block;
+			height: 15px;
+		}
+
+		.row {
+			width: 90%;
+			margin: auto;
+		}
+
+		.row img {
+			width: 100%;
+			height: auto;
+		}
+
+		.row h4>img {
+			width: 50px;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		 }
+
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg ">
+		<div class="container-fluid">
+			<img src="./image/logo.png" class="navbar-brand" alt="logo">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class=" navbar-nav mx-auto me-3 mb-2 mb-lg-0 nav justify-content-end">
+					<!-- mx-auto me-3 mb-2 mb-lg-0 nav justify-content-end  for the one in two in nav tabs -->
+					<li class="nav-item">
+						<a class="nav-link  active" aria-current="page" href="./boostrap-index.html ">
+							<i class="fa fa-home fa-1px" aria-hidden="true"></i>Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="find_mydoc.html"><i class="fa fa-user-md fa-1px" aria-hidden="true"></i>Find a Doctor</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="medical-service.html"><i class="fa fa-heartbeat fa-1px" aria-hidden="true"></i> Medical Services</a>
+					</li>
+
+					<li class="nav-item dropdown navbar-brand1">
+						<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"><i class="fa fa-calendar fa-1px" aria-hidden="true"></i>
+							Appointment
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a class="dropdown-item navbar-brand1" href="BookAppointment.html">Book Appointment</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item navbar-brand1" href="appoint.html">Check Appointment Status</a>
+							</li>
+
+
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"><i class="fa fa-phone-square fa-1px" aria-hidden="true"></i> Contact us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./login.html"> <i class="fa fa-graduation-cap fa-1x" aria-hidden="true"></i>
+							Carrier</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link navbar-brand1 " href="about.html"> <i class="fa fa-info-circle fa-1x" aria-hidden="true"></i> About Us </a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+	<div class="container text-center ">
+		<div class="card-header  m-2 fs-3 bg-info">
+			Book Your Appointment
+		</div>
+	</div>
+
+
+
+	<div class="container-fluid">
+
+		<div class="row  ">
+			<div class="col-xl-6  col-lg-6 col-md-6 col-sm-12">
+				<img src="./image/appoint-2.webp" class="img-fluid" alt="">
+			</div>
+			<div class="col-xl-6  col-lg-6 col-md-6 col-sm-12">
+				<div class="card-header text-center fs-4 fw-bolder">Appointment</div>
+				<label for="">Name</label>
+				<input type="text" name="fname" class="form-control" id="name" placeholder="Enter Your Full Name">
+
+				<label for="">Email</label>
+				<input type="email" name="fname" class="form-control" id="name" placeholder="Enter Your Email-ID">
+
+				<div class="row "  style="width:100%" >
+					<div class="col-6  p-0 pe-2">
+						<label for="">Age</label>
+						<input type="tel" class="form-control" name="age" id="age" maxlenght="2"
+							placeholder="Enter Your Age">
+					</div>
+					<div class=" col-6 ps-2 p-0" >
+						<label for="">Mobile No.</label>
+						<input type="number"class="form-control" placeholder="Enter Your Mobile Number">
+					</div>
+				</div>
+				<div class="row " style="width:100%">
+
+					<div class="col  p-0 pe-2 m-auto">
+
+						<label for="date">Date</label>
+						<input type="date"  class="form-control" name="date" id="date">
+
+					</div>
+					<div class="col  p-0 pe-2 m-auto">
+						<label for="time">Time</label>
+						<input type="time"   class="form-control"  id="time">
+					</div>
+				</div>
+				<div class="row mt-1  m-0" style="width:100%">
+					<h6>Address Details</h6>
+					<div class="col  p-0 pe-2 m-auto">
+						<input type="text"  class="form-control" name="add" id="add" placeholder="Enter Your Area ">
+					</div>
+					<div class="col  p-0 pe-2  m-auto">
+						<input type="text"  class="form-control" name="add" id="add" placeholder="Enter Your City ">
+					</div>
+				</div>
+				<div class="row m-0 mt-1 mb-1" style="width:100%">
+					<div class="col   p-0 pe-2 m-auto">
+						<input type="text"  class="form-control" name="add" id="add" placeholder="Enter Your State ">
+					</div>
+					<div class="col  p-0 pe-2  m-auto">
+						<input type="text"  class="form-control" name="add" id="add" placeholder="Enter Your Pincode ">
+					</div>
+				</div>
+				<div class="row">
+					<button value="sumbit" id="appsub" class="btn btn-info"><span>>></span> Book Appointment</button>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+
+
+	</script>
+	
+
+	<div class="container text-center  mt-5">
+		<div class="card-header fw-bold  m-2 fs-3 bg-info">
+			Video Consultance
+		</div>
+	</div>
+
+
+	<div class="row">
+  
+<div class="col-xl-6  col-lg-6 col-md-6 col-sm-12">
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/KYILBTXSRx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="col-xl-6  col-lg-6 col-md-6 col-sm-12">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/JQ08gEyyDWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+	  
+</div>
+	</div>
+
+<!-- footer of the page -->
+<div class="container-fluid  mt-5 bg-info ">
+
+	<div class="row pt-4">
+
+		<div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 footer  ">
+			<div class=" fs-6 fw-bold  mb-2">Quick Link
+
+			</div>
+
+			<p> <a href="./find_mydoc.html">Find A Doctor</a></p>
+			<p> <a href="./BookAppointment.html">Book an Appointment</a> </p>
+			<p><a href="./doceequery.html">Make a Enquiry</a></p>
+			<p><a href="./doceequery.html#feedback">Feedback</a></p>
+			<p><a href="./enviorment_.html#blog">Blog's</a></p>
+			<p><a href="./Career.html">Career</a></p>
+
+		</div>
+
+
+
+		<div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 footer ">
+			<div class="fs-6 fw-bold  mb-2">FH CARE </div>
+
+			<p><a href="Hernia.html">Hernia</a></p>
+			<p><a href="Lung Cancer.html">Lung Cancer</a></p>
+			<p><a href="Brain.html">Brain Tumour</a></p>
+			<p><a href="live canser.html">Live Canser</a></p>
+			<p><a href="live canser.html">Heart Attack</a></p>
+			<p><a href="live canser.html">Uninary Problem</a></p>
+			<p><a href="kidney.html">Kidney Transplant</a></p>
+
+
+		</div>
+		<div class="col-xl-3 col-md-3 col-sm-3 footer ">
+			<div class="fs-6 fw-bold mb-2 ">Excellence Center</div>
+			<p><a href="caidology.html">Cadiology</a></p>
+			<p><a href="Cardiac Surgery.html">Cardiac Surgery</a></p>
+			<p><a href="Neurology.html">Neurology</a></p>
+			<p><a href="Neurosurgery.html">Neurosurgery</a></p>
+			<p><a href="Orthopadic.html">Orthopadics</a></p>
+			<p><a href="Nephrology.html">Nephrology</a></p>
+			<p><a href="Radiation Oncology.html">Radiation Oncology</a></p>
+
+		</div>
+		<div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 footer">
+			<div class="fs-6 fw-bold  mb-2 "> Medical Professionals</div>
+
+			<p><a href="./Career.html">Acadmics</a></p>
+			<p><a href="./Career.html">Clinic Research</a></p>
+			<p><a href="./Career.html">Future Health College</a></p>
+			<div class="row">
+				<div class="col-8 m-0 p-0 " class="form-control ">
+					<input type="text" name='mail' id='mail-sort' class="form-control m-0 " style="min-width: 80%;"
+						placeholder="Enter Your Name">
+				</div>
+				<div class="col-4 m-0 p-0 " class="form-control">
+					<input type="submit" class="form-control m-0 " value="📤">
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+</div>
+<div class=" bg-danger   p-4">
+
+	<a href="" class="p-2 text-decoration-none"> © Future Hopital Ltd |All Rights Reserve </a>
+	<span class="float-end">
+		<a href="" class="p-2  text-decoration-none"> Term & Conditions</a>
+		<a href="" class="p-2  text-decoration-none"> Privacy Policy</a>
+	</span>
+</div>
+
+
+
+<div class="container-fluid">
+
+
+	
+
+	<!-- contacting social meadia logo and link  -->
+
+
+	<div class="contact  position-relative"> 
+		<span class="position-absolute position-fixed top-50 start-0 translate-middle-y">
+
+			<a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer">
+				<p class="fa fa-youtube mt-2 mb-2 d-block"></p></a>
+
+			<a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+				<p class="fa fa-facebook mt-2 mb-2 d-block"></p></a>
+
+			<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+				<p class="fa fa-instagram mt-2 mb-2 d-block"></p></a>
+
+			<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+				<p class="fa fa-twitter mt-2 mb-2 d-block"></p></a>
+		</span>
+	</div>
+
+
+	<div class=" contact position-relative">
+		<span class="position-absolute  position-fixed top-50 end-0 translate-middle end-5">
+			<a href="https://api.whatsapp.com/send/?phone=%2B919767631826&text=welcome%27to+Future+Health+consultancy+Always+ready+for+your+help&type=phone_number&app_absent=0
+" target="_blank">
+				<p class="fa fa-whatsapp mt-2 mb-2 d-block"></p>
+			</a>
+			<a href="tel:+9197-6763-1826" target="_blank">
+				<p class="fa fa-phone mt-2 mb-2 d-block"></p>
+			</a>
+		</span>
+	</div>
+
+
+	<!--  end here contact related html  -->
+
+
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+</html>
